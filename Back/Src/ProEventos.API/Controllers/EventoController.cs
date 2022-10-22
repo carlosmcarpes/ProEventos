@@ -34,10 +34,6 @@ namespace ProEventos.API.Controllers
                 ImagemUrl = "foto1.png"
             }
         };
-        
-        public String nome(){
-            return "Carlos";
-        }
 
         [HttpGet]
         public IEnumerable<Evento> Get(){
