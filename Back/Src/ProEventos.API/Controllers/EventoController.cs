@@ -35,6 +35,10 @@ namespace ProEventos.API.Controllers
             }
         };
         
+        public String nome(){
+            return "Carlos";
+        }
+
         [HttpGet]
         public IEnumerable<Evento> Get(){
 
@@ -42,7 +46,7 @@ namespace ProEventos.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public IEnumerable<Evento> GetById(int id){
+        public IEnumerable<Evento> GetById(int id){ 
 
             return _evento.Where(evento => evento.EventoId == id); //evento é uma variável criada aqui agora
             
